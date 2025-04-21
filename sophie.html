@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amnar – Emirati Recipes</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fceeff;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #e0aaff, #ffb6d9);
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin: 1rem;
+    }
+
+    .time-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #c46cc2;
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+
+    .star {
+      font-size: 1.5rem;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .star:hover,
+    .star.selected {
+      color: gold;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #e0aaff;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Amnar</h1>
+    <p>Explore Authentic Emirati Recipes</p>
+  </header>
+
+  <!-- Cards Section -->
+  <div class="card-container">
+    <!-- Luqaimat -->
+    <div class="card" onclick="window.location.href='luqaimat.html'">
+      <img src=https://tarasmulticulturaltable.com/wp-content/uploads/2019/11/Luqamaat-Fried-Dumplings-with-Date-Syrup-2-of-4.jpg alt="Luqaimat" />
+      <h3>🟤 Luqaimat</h3>
+      <div class="time-badge">30m</div>
+      <div class="rating" data-recipe="luqaimat">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+    </div>
+
+    <!-- Falafel -->
+    <div class="card" onclick="window.location.href='falafel.html'">
+      <img src=https://i.pinimg.com/736x/58/30/84/583084353e06c9e6dea40b1a75617c4d.jpg alt="Falafel" />
+      <h3>🧆 Falafel</h3>
+      <div class="time-badge">25m</div>
+      <div class="rating" data-recipe="falafel">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+    </div>
+
+    <!-- Kabsa -->
+    <div class="card" onclick="window.location.href='kabsa.html'">
+      <img src=https://i.pinimg.com/736x/32/81/94/32819498f73f7644631b4a8bd09f6bc8.jpg alt="Kabsa" />
+      <h3>🍛 Kabsa</h3>
+      <div class="time-badge">60m</div>
+      <div class="rating" data-recipe="kabsa">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+    </div>
+
+    <!-- Kebab -->
+    <div class="card" onclick="window.location.href='kebab.html'">
+      <img src=https://i.pinimg.com/736x/da/b0/36/dab036d13706cbd5f1bdc872b42d39bf.jpg alt="Kebab" />
+      <h3>🥙 Kebab</h3>
+      <div class="time-badge">40m</div>
+      <div class="rating" data-recipe="kebab">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+    </div>
+<!-- Harees -->
+<div class="card" onclick="window.location.href='harees.html'">
+  <img src=https://i.pinimg.com/736x/37/c6/69/37c669e16f71314d116dc8f512db3c51.jpg alt="Harees" />
+  <h3>🍲 Harees</h3>
+  <div class="time-badge">60m</div>
+  <div class="rating" data-recipe="harees">
+    <span class="star" data-value="1">★</span>
+    <span class="star" data-value="2">★</span>
+    <span class="star" data-value="3">★</span>
+    <span class="star" data-value="4">★</span>
+    <span class="star" data-value="5">★</span>
+  </div>
+</div>
+
+<!-- Khuzi -->
+<div class="card" onclick="window.location.href='khuzi.html'">
+  <img src=https://curlytales.com/wp-content/uploads/2024/12/cropped-image-35.png alt="Khuzi" />
+  <h3>🍛 Khuzi</h3>
+  <div class="time-badge">90m</div>
+  <div class="rating" data-recipe="khuzi">
+    <span class="star" data-value="1">★</span>
+    <span class="star" data-value="2">★</span>
+    <span class="star" data-value="3">★</span>
+    <span class="star" data-value="4">★</span>
+    <span class="star" data-value="5">★</span>
+  </div>
+</div>
+
+<!-- Balaleet -->
+<div class="card" onclick="window.location.href='balaleet.html'">
+  <img src=https://i.pinimg.com/736x/3e/f6/68/3ef668faeed208c28f1ae0be4eec5a26.jpg alt="Balaleet" />
+  <h3>🍝 Balaleet</h3>
+  <div class="time-badge">30m</div>
+  <div class="rating" data-recipe="balaleet">
+    <span class="star" data-value="1">★</span>
+    <span class="star" data-value="2">★</span>
+    <span class="star" data-value="3">★</span>
+    <span class="star" data-value="4">★</span>
+    <span class="star" data-value="5">★</span>
+  </div>
+</div>
+    <!-- Chebab -->
+    <div class="card" onclick="window.location.href='chebab.html'">
+      <img src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMhXab9v85uUxFW9it9QiKHY8FIJpMx_9TCA-iNbruh0yfJj_3We0dZZ50GaoedNxMgsoxBu1ly1z6HP3M9FlOoMW0jLyqVehnxLF8qUNZ8MqZJiLdQT_GepMa1Xd5_KF2guLGfv5wInLmSBL-S22uUrpSFXcJJfzwE58p24rZYEqTNC2OyViaZAXO/s4032/28E0A67E-B730-4711-B581-E308CD52E328.jpeg alt="Chebab" />
+      <h3>🥞 Chebab</h3>
+      <div class="time-badge">45m</div>
+      <div class="rating" data-recipe="chebab">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data
+
+
+
+::contentReference[oaicite:2]{index=2}
+
+</body>
+</html>
